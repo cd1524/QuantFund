@@ -236,4 +236,4 @@ if __name__ == "__main__":
     # Run the trading strategy in an infinite loop (with a 10-minute interval)
     while True:
         run_trading_strategy()
-        time.sleep(600)  # Sleep for 10 minutes before next run
+        time.sleep(60)  # Sleep for 1 minute before next run
