@@ -15,7 +15,7 @@ def plot_data(data, market_name, query_status, action):
     plt.title(f"{market_name} - {action}")
     plt.xlabel('Time')
     plt.ylabel('Price')
-    plt.show()
+    plt.savefig(f"figures/{market_name}_{action}.png")
 
     return
 
@@ -37,7 +37,7 @@ def get_markets_by_keyword(client, keyword):
 if __name__ =="__main__":
 
     host = "https://clob.polymarket.com"
-    key = '{insert_key}'
+    key = '0x1bd6c7ae06269db6bf0f8b4412a029637158aa7b93e7501a175faa5d6316315d'
     chain_id = POLYGON
 
     # Create CLOB client and get/set API credentials
