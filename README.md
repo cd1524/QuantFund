@@ -6,7 +6,7 @@ cd py-clob-client
 
 git fetch origin pull/114/head:<branch-name:whatever the name you wish>
 
-git checkout <whatever the name you gave for the branch>
+git checkout branch_name
 
 pip install .
 
